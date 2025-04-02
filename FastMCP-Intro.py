@@ -1,7 +1,7 @@
 from mcp.server.fastmcp import FastMCP
 import requests
 
-mcp = FastMCP("LearningDemo")
+mcp = FastMCP("LearningDemo", dependencies=["requests"])
 
 
 @mcp.tool()
